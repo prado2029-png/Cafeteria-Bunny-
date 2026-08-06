@@ -129,11 +129,51 @@ nav a:hover {
 }
 
 #menu h2 {
+    transition: transform .3s ease;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: #6F4E37;
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 40px;
-    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
 
+#menu h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background: #d4a373;
+    margin: 10px auto 0;
+    border-radius: 20px;
+}
+
+#menu h2:hover {
+    transform: scale(1.03);
+}
+
+#ubicacion h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: #6F4E37;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform .3s ease;
+}
+
+#ubicacion h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #d4a373;
+    margin: 10px auto 0;
+    border-radius: 20px;
+}
+
+#ubicacion h2:hover {
+    transform: scale(1.03);
 }
 
 .tarjeta img {
@@ -167,8 +207,8 @@ nav a:hover {
 }
 
 iframe {
-    width: 85%;
-    height: 420px;
+    width: 75%;
+    height: 390px;
     max-width: 900px;
     border: 4px solid white;
     margin-top: 20px;
